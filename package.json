@@ -12,7 +12,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "tender",
+                "label": "Tender",
                 "uiTheme": "vs-dark",
                 "path": "./themes/tender-color-theme.json"
             }

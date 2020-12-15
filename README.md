@@ -1,4 +1,8 @@
-# README
+# Tender for vscode
+
+## **Working In Progress**
+This repository is under development.
+
 ## This is the README for your extension "vscode-tender-theme"
 You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
 
