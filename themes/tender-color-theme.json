@@ -4,8 +4,8 @@
 	"colors": {
 		"editor.background": "#282828",
 		"editor.foreground": "#eeeeee",
-		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
+		"activityBarBadge.background": "#73cef4",
+		"sideBarTitle.foreground": "#dadada"
 	},
 	"tokenColors": [
 		{
@@ -15,6 +15,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
+				"comment": "hi Comment",
 				"fontStyle": "italic",
 				"foreground": "#666666"
 			}
@@ -26,7 +27,8 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#73cef4"
+				"comment": "hi typescriptVariable",
+				"foreground": "#b3deef"
 			}
 		},
 		{
@@ -35,7 +37,8 @@
 				"constant.other.color"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"comment": "tender.yml text",
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -45,6 +48,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
+				"comment": "hi Error",
 				"foreground": "#f43753"
 			}
 		},
@@ -56,13 +60,23 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#73cef4"
+				"comment": "Not Written. but blue1 is best",
+				"foreground": "#b3deef"
+			}
+		},
+		{
+			"name": "Keyword Control",
+			"scope": [
+				"keyword.control",
+			],
+			"settings": {
+				"comment": "keyword example> if, try, end while. green1 is best",
+				"foreground": "#c9d05c"
 			}
 		},
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"keyword.control",
 				"constant.other.color",
 				"punctuation",
 				"meta.tag",
@@ -76,7 +90,8 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#c9d05c"
+				"comment": "base.yml Keyword -> Statement -> blue1",
+				"foreground": "#b3deef"
 			}
 		},
 		{
@@ -87,7 +102,8 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"comment": "base.yml Tag -> Special -> blue2",
+				"foreground": "#73cef4"
 			}
 		},
 		{
@@ -100,7 +116,8 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#c9d05c"
+				"comment": "hi Function",
+				"foreground": "#b3deef"
 			}
 		},
 		{
@@ -109,7 +126,8 @@
 				"meta.block variable.other"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"comment": "Not Written",
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -119,7 +137,8 @@
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"comment": "Not Written",
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -135,7 +154,8 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#F78C6C"
+				"comment": "base.yml Number, Constant -> yellow2",
+				"foreground": "#ffc24b"
 			}
 		},
 		{
@@ -150,7 +170,8 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#C3E88D"
+				"comment": "hi String",
+				"foreground": "#d3b987"
 			}
 		},
 		{
@@ -166,7 +187,8 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#c9d05c"
+				"comment": "Not Written",
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -175,7 +197,8 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"comment": "Not Written",
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -189,7 +212,8 @@
 				"source.postcss support.type.property-name"
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"comment": "hi cssProp",
+				"foreground": "#b3deef"
 			}
 		},
 		{
@@ -200,7 +224,8 @@
 				"variable.other.class.js"
 			],
 			"settings": {
-				"foreground": "#FF5370"
+				"comment": "Not Written",
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -209,8 +234,9 @@
 				"variable.language"
 			],
 			"settings": {
+				"comment": "Not Written",
 				"fontStyle": "italic",
-				"foreground": "#FF5370"
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -219,8 +245,9 @@
 				"entity.name.method.js"
 			],
 			"settings": {
+				"comment": "Not Written",
 				"fontStyle": "italic",
-				"foreground": "#82AAFF"
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -230,7 +257,8 @@
 				"variable.function.constructor"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
+				"comment": "entity.name.function -> hi Function",
+				"foreground": "#b3deef"
 			}
 		},
 		{
@@ -239,7 +267,8 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"comment": "hi cssAttr",
+				"foreground": "#eeeeee"
 			}
 		},
 		{
@@ -249,8 +278,9 @@
 				"text.html.basic entity.other.attribute-name"
 			],
 			"settings": {
+				"comment": "html.yml htmlPreAttr -> String",
 				"fontStyle": "italic",
-				"foreground": "#FFCB6B"
+				"foreground": "#d3b987"
 			}
 		},
 		{
@@ -259,7 +289,8 @@
 				"entity.other.attribute-name.class"
 			],
 			"settings": {
-				"foreground": "#FFCB6B"
+				"comment": "css.yml cssClassName -> green1",
+				"foreground": "#c9d05c"
 			}
 		},
 		{
@@ -268,7 +299,8 @@
 				"source.sass keyword.control"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
+				"comment": "keyword example>if, try, end while... green1 is best",
+				"foreground": "#c9d05c"
 			}
 		},
 		{
