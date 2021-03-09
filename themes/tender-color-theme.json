@@ -94,7 +94,7 @@
 		"editor.foreground": "#eeeeee",  // base.yml Normal: 'text bg'
 		"editorLineNumber.foreground": "#444444",  // base.yml LineNr: 'grey3 -'
 		"editorLineNumber.activeForeground": "#73cef4", //base.yml CursorLineNr: 'blue2 - '
-		"editorCursor.foreground": "#323232",  // base.yml CursorLine: '- shadow'
+		"editorCursor.background": "#323232",  // base.yml CursorLine: '- shadow'
 		"editor.selectionBackground": "#99999980",
 		"editor.selectionHighlightBackground": "#66666680",
 		"editor.wordHighlightBackground": "#44444480",
