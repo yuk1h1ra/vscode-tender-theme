@@ -43,82 +43,107 @@
 	"name": "Tender",
 	"type": "dark",
 	"colors": {
-		"dropdown.background": "#444444",
-		"list.activeSelectionBackground": "#666666",
-		"list.focusBackground": "#444444",
-		"dropdown.listBackground": "#1d1d1d",
-		"list.inactiveSelectionBackground": "#444444",
-		"list.hoverBackground": "#323232",
-		"list.dropBackground": "#444444",
-		"list.highlightForeground": "#eeeeee",
-		"button.background": "#666666",
-		"editor.background": "#282828",
-		"editor.foreground": "#eeeeee",
+    // Base colors
+		"focusBorder": "#666666",
+		"widget.shadow": "#32323298",
 		"selection.background": "#dadada",
-		"editor.selectionHighlightBackground": "#66666680",
-		"editor.selectionBackground": "#99999980",
+    // Button control
+		"button.background": "#666666",
+    // Dropdown control
+		"dropdown.background": "#444444",
+		"dropdown.listBackground": "#1d1d1d",
+    // Input control
+		"input.background": "#444444",
+		"inputOption.activeBorder": "#666666",
+		"inputValidation.errorBackground": "#90274A", // middle of #282828 and #f92672
+		"inputValidation.errorBorder": "#f92672",
+		"inputValidation.infoBackground": "#546190", // middle of #282828 and #819aff
+		"inputValidation.infoBorder": "#819aff",
+		"inputValidation.warningBackground": "#848528", // middle of #282828 and #e2e22e
+		"inputValidation.warningBorder": "#e2e22e",
+    // Badge
+		"badge.background": "#666666",
+		"badge.foreground": "#eeeeee",
+    // Progress bar
+		"progressBar.background": "#666666",
+    // Lists and trees
+		"list.activeSelectionBackground": "#666666",
+		"list.dropBackground": "#444444",
+		"list.focusBackground": "#444444",
+		"list.highlightForeground": "#eeeeee",
+		"list.hoverBackground": "#323232",
+		"list.inactiveSelectionBackground": "#444444",
+    // Activity Bar
+		"activityBar.background": "#282828",
+		"activityBar.foreground": "#eeeeee",
+    // Side Bar
+		"sideBar.background": "#1d1d1d",
+		"sideBarSectionHeader.background": "#282828",
+    // Minimap
 		"minimap.selectionHighlight": "#99999980",
+    // Editor Groups & Tabs
+		"editorGroup.border": "#323232",
+		"editorGroup.dropBackground": "#44444480",
+		"editorGroupHeader.tabsBackground": "#1d1d1d",
+		"tab.border": "#1d1d1d",
+		"tab.lastPinnedBorder": "#444444",
+		"tab.inactiveBackground": "#323232",
+		"tab.inactiveForeground": "#dadada", // needs to be bright so it's readable when another editor group is focused
+    // Editor colors
+		"editor.background": "#282828",  // base.yml Normal: 'text bg'
+		"editor.foreground": "#eeeeee",  // base.yml Normal: 'text bg'
+		"editorLineNumber.foreground": "#444444",  // base.yml LineNr: 'grey3 -'
+		"editorLineNumber.activeForeground": "#73cef4", //base.yml CursorLineNr: 'blue2 - '
+		"editorCursor.foreground": "#323232",  // base.yml CursorLine: '- shadow'
+		"editor.selectionBackground": "#99999980",
+		"editor.selectionHighlightBackground": "#66666680",
 		"editor.wordHighlightBackground": "#44444480",
 		"editor.wordHighlightStrongBackground": "#66666680",
 		"editor.lineHighlightBackground": "#323232",
-		"editorLineNumber.activeForeground": "#dadada",
-		"editorCursor.foreground": "#ffffff",
 		"editorWhitespace.foreground": "#444444",
 		"editorIndentGuide.background": "#444444",
 		"editorIndentGuide.activeBackground": "#666666",
-		"editorGroupHeader.tabsBackground": "#1d1d1d",
-		"editorGroup.dropBackground": "#44444480",
-		"tab.inactiveBackground": "#323232",
-		"tab.border": "#1d1d1d",
-		"tab.inactiveForeground": "#dadada", // needs to be bright so it's readable when another editor group is focused
-		"tab.lastPinnedBorder": "#444444",
-		"widget.shadow": "#32323298",
-		"progressBar.background": "#666666",
-		"badge.background": "#666666",
-		"badge.foreground": "#eeeeee",
-		"editorLineNumber.foreground": "#999999",
-		"panelTitle.activeForeground": "#eeeeee",
-		"panelTitle.activeBorder": "#666666",
-		"panelTitle.inactiveForeground": "#666666",
-		"panel.border": "#444444",
-		"settings.focusedRowBackground": "#4444445A",
-		"titleBar.activeBackground": "#1d1d1d",
-		"statusBar.background": "#444444",
-		"statusBar.noFolderBackground": "#444444",
-		"statusBar.debuggingBackground": "#666666",
-		"statusBarItem.remoteBackground": "#d3b987", // Not Written -> yellow1
-		"activityBar.background": "#282828",
-		"activityBar.foreground": "#eeeeee",
-		"sideBar.background": "#1d1d1d",
-		"sideBarSectionHeader.background": "#282828",
-		"menu.background": "#1d1d1d",
-		"menu.foreground": "#dadada",
-		"pickerGroup.foreground": "#666666",
-		"input.background": "#444444",
-		"inputOption.activeBorder": "#666666",
-		"focusBorder": "#666666",
+    // Diff editor colors
+		"diffEditor.insertedTextBackground": "#464632", // base.yml DiffAdd: '- green4'
+		"diffEditor.removedTextBackground": "#79313c", // base.yml DiffDelete: 'red1 red3'
+    // Editor widget colors
 		"editorWidget.background": "#1d1d1d",
-		"debugToolBar.background": "#1d1d1d",
-		"diffEditor.insertedTextBackground": "#464632", // hi DiffAdd guibg = green4
-		"diffEditor.removedTextBackground": "#79313c", // hi DeleteAdd guibg = red3
-		"inputValidation.errorBackground": "#90274A", // middle of #282828 and #f92672
-		"inputValidation.errorBorder": "#f92672",
-		"inputValidation.warningBackground": "#848528", // middle of #282828 and #e2e22e
-		"inputValidation.warningBorder": "#e2e22e",
-		"inputValidation.infoBackground": "#546190", // middle of #282828 and #819aff
-		"inputValidation.infoBorder": "#819aff",
-		"editorHoverWidget.background": "#444444",
-		"editorHoverWidget.border": "#666666",
 		"editorSuggestWidget.background": "#282828",
 		"editorSuggestWidget.border": "#666666",
-		"editorGroup.border": "#323232",
+		"editorHoverWidget.background": "#444444",
+		"editorHoverWidget.border": "#666666",
+    // Peek view colors
 		"peekView.border": "#666666",
 		"peekViewEditor.background": "#282828",
-		"peekViewResult.background": "#1d1d1d",
-		"peekViewTitle.background": "#1d1d1d",
-		"peekViewResult.selectionBackground": "#444444",
-		"peekViewResult.matchHighlightBackground": "#666666",
 		"peekViewEditor.matchHighlightBackground": "#666666",
+		"peekViewResult.background": "#1d1d1d",
+		"peekViewResult.matchHighlightBackground": "#666666",
+		"peekViewResult.selectionBackground": "#444444",
+		"peekViewTitle.background": "#1d1d1d",
+    // Panel colors
+		"panel.border": "#444444",
+		"panelTitle.activeBorder": "#666666",
+		"panelTitle.activeForeground": "#eeeeee",
+		"panelTitle.inactiveForeground": "#666666",
+    // Status Bar colors
+		"statusBar.background": "#44778d", // lightline/regular.yml normal3: 'blue1 blue3'
+		"statusBar.foreground": "#b3deef", // lightline/regular.yml normal3: 'blue1 blue3'
+		"statusBar.debuggingBackground": "#715b2f", // lightline/regular.yml visual3: 'yellow1 yellow3'
+		"statusBar.debuggingForeground": "#d3b987", // lightline/regular.yml visual3: 'yellow1 yellow3'
+		"statusBar.noFolderForeground": "#bbbbbb", // lightline/regular.yml inactive3: 'gandalf grey3'
+		"statusBar.noFolderBackground": "#444444", // lightline/regular.yml inactive3: 'gandalf grey3'
+		"statusBarItem.remoteBackground": "#6a6b3f", // lightline/regular.yml insert3: 'green1 green3'
+		"statusBarItem.remoteForeground": "#c9d05c", // lightline/regular.yml insert3: 'green1 green3'
+		"statusBarItem.errorBackground": "#79313c", // lightline/regular.yml replace3: 'red1 red3'
+		"statusBarItem.errorForeground": "#f43753", // lightline/regular.yml replace3: 'red1 red3'
+    // Title Bar colors
+		"titleBar.activeBackground": "#1d1d1d",
+    // Menu Bar colors
+		"menu.background": "#1d1d1d",
+		"menu.foreground": "#dadada",
+    // Quick picker colors
+		"pickerGroup.foreground": "#666666",
+    // Integrated Terminal colors
 		"terminal.ansiBlack": "#333333",
 		"terminal.ansiRed": "#C4265E", // the bright color with ~75% transparent on the background
 		"terminal.ansiGreen": "#86B42B",
@@ -134,7 +159,11 @@
 		"terminal.ansiBrightBlue": "#819aff", // hue shifted #AE81FF
 		"terminal.ansiBrightMagenta": "#AE81FF",
 		"terminal.ansiBrightCyan": "#66D9EF",
-		"terminal.ansiBrightWhite": "#eeeeee"
+		"terminal.ansiBrightWhite": "#eeeeee",
+    // Debug color
+		"debugToolBar.background": "#1d1d1d",
+    // Settings Editor colors
+		"settings.focusedRowBackground": "#4444445A",
 	},
 	"tokenColors": [
 		{
