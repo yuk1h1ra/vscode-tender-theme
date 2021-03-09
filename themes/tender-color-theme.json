@@ -144,22 +144,23 @@
     // Quick picker colors
 		"pickerGroup.foreground": "#666666",
     // Integrated Terminal colors
-		"terminal.ansiBlack": "#333333",
-		"terminal.ansiRed": "#C4265E", // the bright color with ~75% transparent on the background
-		"terminal.ansiGreen": "#86B42B",
-		"terminal.ansiYellow": "#B3B42B",
-		"terminal.ansiBlue": "#6A7EC8",
-		"terminal.ansiMagenta": "#8C6BC8",
-		"terminal.ansiCyan": "#56ADBC",
-		"terminal.ansiWhite": "#e3e3dd",
-		"terminal.ansiBrightBlack": "#666666",
-		"terminal.ansiBrightRed": "#f92672",
-		"terminal.ansiBrightGreen": "#A6E22E",
-		"terminal.ansiBrightYellow": "#e2e22e", // hue shifted #A6E22E
-		"terminal.ansiBrightBlue": "#819aff", // hue shifted #AE81FF
-		"terminal.ansiBrightMagenta": "#AE81FF",
-		"terminal.ansiBrightCyan": "#66D9EF",
-		"terminal.ansiBrightWhite": "#eeeeee",
+	    // from tender.vim/estilo/addons/nvim-term.yml
+		"terminal.ansiBlack": "#282828", // color_0: 'bg'
+		"terminal.ansiRed": "#f43753", // color_1: 'red1'
+		"terminal.ansiGreen": "#c9d05c", // color_2: 'green1'
+		"terminal.ansiYellow": "#ffc24b", // color_3: 'yellow2'
+		"terminal.ansiBlue": "#b3deef", // color_4: 'blue1'
+		"terminal.ansiMagenta": "#d3b987", // color_5: 'yellow1'
+		"terminal.ansiCyan": "#73cef4", // color_6: 'blue2'
+		"terminal.ansiWhite": "#eeeeee", // color_7: 'text'
+		"terminal.ansiBrightBlack": "#1d1d1d", // color_8: 'darker'
+		"terminal.ansiBrightRed": "#f43753", // color_9: 'red1'
+		"terminal.ansiBrightGreen": "#c9d05c", // color_10: 'green1'
+		"terminal.ansiBrightYellow": "#ffc24b", // color_11: 'yellow2'
+		"terminal.ansiBrightBlue": "#b3deef", // color_12: 'blue1'
+		"terminal.ansiBrightMagenta": "#d3b987", // color_13: 'yellow1'
+		"terminal.ansiBrightCyan": "#73cef4", // color_14: 'blue2'
+		"terminal.ansiBrightWhite": "#ffffff", // color_15: 'highlighted'
     // Debug color
 		"debugToolBar.background": "#1d1d1d",
     // Settings Editor colors
