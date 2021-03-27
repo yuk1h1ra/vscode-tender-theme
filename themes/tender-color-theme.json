@@ -104,8 +104,8 @@
 		"editorIndentGuide.background": "#444444",
 		"editorIndentGuide.activeBackground": "#666666",
     // Diff editor colors
-		"diffEditor.insertedTextBackground": "#464632", // base.yml DiffAdd: '- green4'
-		"diffEditor.removedTextBackground": "#79313c", // base.yml DiffDelete: 'red1 red3'
+		"diffEditor.insertedTextBackground": "#46463280", // base.yml DiffAdd: '- green4'
+		"diffEditor.removedTextBackground": "#79313c80", // base.yml DiffDelete: 'red1 red3'
     // Editor widget colors
 		"editorWidget.background": "#1d1d1d",
 		"editorSuggestWidget.background": "#282828",
@@ -168,31 +168,17 @@
 	},
 	"tokenColors": [
 		{
-			"settings": {
-				"foreground": "#F8F8F2"
-			}
-		},
-		{
-			"scope": [
-				"meta.embedded",
-				"source.groovy.embedded"
-			],
-			"settings": {
-				"foreground": "#F8F8F2"
-			}
-		},
-		{
 			"name": "Comment",
 			"scope": "comment",
 			"settings": {
-				"foreground": "#88846f"
+				"foreground": "#666666" // base.yml Comment: 'grey2'
 			}
 		},
 		{
 			"name": "String",
 			"scope": "string",
 			"settings": {
-				"foreground": "#E6DB74"
+				"foreground": "#d3b987" // base.yml String: 'yellow1 -'
 			}
 		},
 		{
@@ -202,7 +188,7 @@
 				"punctuation.section.embedded"
 			],
 			"settings": {
-				"foreground": "#F92672"
+				"foreground": "#73cef4"
 			}
 		},
 		{
@@ -218,36 +204,42 @@
 			"name": "Number",
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "#AE81FF"
+				"foreground": "#ffc24b" // base.yml Number: 'yellow2 -'
 			}
 		},
 		{
 			"name": "Built-in constant",
 			"scope": "constant.language",
 			"settings": {
-				"foreground": "#AE81FF"
+				"foreground": "#ffc24b" // base.yml Constant: 'yellow2 -'
 			}
 		},
 		{
 			"name": "User-defined constant",
 			"scope": "constant.character, constant.other",
 			"settings": {
-				"foreground": "#AE81FF"
-			}
-		},
-		{
-			"name": "Variable",
-			"scope": "variable",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#F8F8F2"
+				"foreground": "#73cef4" // base.yml SpecialChar: 'blue2 -'
 			}
 		},
 		{
 			"name": "Keyword",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#F92672"
+				"foreground": "#b3deef" // base.yml Keyword: 'blue1 -'
+			}
+		},
+		{
+			"name": "Keyword Control",
+			"scope": "keyword.control",
+			"settings": {
+				"foreground": "#c9d05c" // base.yml Conditional: 'green1 -'
+			}
+		},
+		{
+			"name": "Keyword Operator",
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#f43753" // base.yml Operator: 'red1 -'
 			}
 		},
 		{
@@ -255,7 +247,7 @@
 			"scope": "storage",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#F92672"
+				"foreground": "#73cef4" // base.yml StorageClass: 'blue2 -'
 			}
 		},
 		{
@@ -263,7 +255,7 @@
 			"scope": "storage.type",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#66D9EF"
+				"foreground": "#73cef4" // base.yml StorageClass: 'blue2 -'
 			}
 		},
 		{
@@ -271,7 +263,7 @@
 			"scope": "entity.name.type, entity.name.class, entity.name.namespace, entity.name.scope-resolution",
 			"settings": {
 				"fontStyle": "underline",
-				"foreground": "#A6E22E"
+				"foreground": "#73cef4" // base.yml StorageClass: 'blue2 - '
 			}
 		},
 		{
@@ -279,7 +271,7 @@
 			"scope": "entity.other.inherited-class",
 			"settings": {
 				"fontStyle": "italic underline",
-				"foreground": "#A6E22E"
+				"foreground": "#73cef4" // base.yml StorageClass: 'blue2 - '
 			}
 		},
 		{
@@ -287,7 +279,7 @@
 			"scope": "entity.name.function",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#A6E22E"
+				"foreground": "#b3deef" // base.yml Function: 'blue1 -'
 			}
 		},
 		{
@@ -295,7 +287,7 @@
 			"scope": "variable.parameter",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#FD971F"
+				"foreground": "#b3deef" // base.yml Function: 'blue1 -'
 			}
 		},
 		{
@@ -303,7 +295,7 @@
 			"scope": "entity.name.tag",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#F92672"
+				"foreground": "#b3deef" // html.yml htmlTag: 'blue1 -'
 			}
 		},
 		{
@@ -311,7 +303,7 @@
 			"scope": "entity.other.attribute-name",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#A6E22E"
+				"foreground": "#73cef4" // html.yml htmlArg 'blue2 - '
 			}
 		},
 		{
@@ -319,7 +311,7 @@
 			"scope": "support.function",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#66D9EF"
+				"foreground": "#b3deef" // base.yml Function: 'blue1 -'
 			}
 		},
 		{
@@ -327,7 +319,7 @@
 			"scope": "support.constant",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#66D9EF"
+				"foreground": "#ffc24b" // base.yml Constant: 'yellow2 -'
 			}
 		},
 		{
@@ -335,7 +327,7 @@
 			"scope": "support.type, support.class",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#66D9EF"
+				"foreground": "#73cef4" // base.yml StorageClass: 'blue2 - '
 			}
 		},
 		{
